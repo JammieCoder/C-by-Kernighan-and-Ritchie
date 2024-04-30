@@ -1,8 +1,7 @@
-#include <stdint.h>
 #include <stdio.h>
 #include <sys/types.h>
 int main() {
-  float fheit = 0;
+  float fheit;
   float cgrade = 0; // in reverse because little-endian
   // Variables are loaded onto the stack in the order that they are referenced
   // (i think)
