@@ -11,14 +11,6 @@
             "program": "build/${fileBasenameNoExtension}",
             "args": [],
             "cwd": "${workspaceFolder}"
-        }, 
-        {
-            "name": "lldb-mi",
-            "type": "lldb-mi",
-            "request": "launch",
-            "target": "./build/${fileBasenameNoExtension}",
-            "cwd": "${workspaceRoot}",
-            "valuesFormatting": "parseText"
         }
     ]
 }
