@@ -11,6 +11,8 @@ void clearbuffer() {
   printf("Rest of buffer: ");
   // must use int so enough storage for EOF int (-1 = 0xffffffff)
   int c2;
+  // extra brackets required because != has higher precedence than =
+  // i.e. c = getchar() != EOF -> c = (getchar())
   while ((c2 = getchar()) != '\n' && c2 != EOF) {
     putchar(c2);
   }
