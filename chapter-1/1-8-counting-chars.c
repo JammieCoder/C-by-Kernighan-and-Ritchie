@@ -12,5 +12,7 @@ int main() {
       nTabs++;
     }
   }
-  printf("%d\n", nNewLine);
+  printf("%d New Lines\n", nNewLine);
+  printf("%d Blanks\n", nBlanks);
+  printf("%d Tabs\n", nTabs);
 }
