@@ -8,9 +8,8 @@ int main() {
       if (nBlanks > 0) {
         putchar(' ');
         nBlanks = 0;
-      } else {
-        putchar(c2);
       }
+      putchar(c2);
     }
   }
 }

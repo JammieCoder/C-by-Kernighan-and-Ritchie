@@ -1,6 +1,6 @@
 #include <stdio.h>
 
-// Replaced at compile-time, aren't in declarations
+// "magic numbers" Replaced at compile-time, aren't in declarations
 // UPPERCASE , no ; requred
 
 #define LOWER 0

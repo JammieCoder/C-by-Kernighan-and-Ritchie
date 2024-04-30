@@ -1,4 +1,5 @@
-gcc 1-8-counting-chars.c -o build/1-8-counting-chars
-gcc 1-9-blank-replacer.c -o build/1-9-blank-replacer
-./build/1-9-blank-replacer < beeees.txt
-./build/1-8-counting-chars < beeees.txt
+gcc 1-11-counter.c -o build/1-11-counter
+gcc 1-12-word-per-line.c -o build/1-12-word-per-line
+./build/1-12-word-per-line < beeees.txt
+echo "" 
+./build/1-11-counter < beeees.txt
