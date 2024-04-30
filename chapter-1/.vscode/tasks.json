@@ -6,7 +6,7 @@
                 {
             "label": "build c for debug",
             "type": "shell",
-            "command": "gcc -g ${file} -o build/${fileBasenameNoExtension}",
+            "command": "gcc -g ${file} -o build/Debug/${fileBasenameNoExtension}",
             "group": {
                 "kind": "build",
                 "isDefault": true
