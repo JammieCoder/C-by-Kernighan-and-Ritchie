@@ -8,7 +8,7 @@
             "type": "lldb",
             "request": "launch",
             "name": "lldbCode",
-            "program": "build/Debug/${fileBasenameNoExtension}",
+            "program": "build/Debug/${fileBasenameNoExtension}.o",
             "args": [],
             "cwd": "${workspaceFolder}"
         }

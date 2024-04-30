@@ -1,18 +1,18 @@
-SOURCES = $(wildcard *.c)
-OBJECTS = $(patsubst %.c, build/%.o, $(SOURCES)) # Object files go into the build directory
-EXECUTABLES = $(patsubst %.c, build/%, $(SOURCES)) # Executables go into the build directory
+SRCDIR = src
+SOURCES = $(wildcard $(SRCDIR)/*.c)
+OBJECTS = $(patsubst $(SRCDIR)/%.c, build/%.o, $(SOURCES)) # Object files go into the build directory
+EXECUTABLES = $(patsubst $(SRCDIR)/%.c, build/%, $(SOURCES)) # Executables go into the build directory
 CFLAGS = 
 
 all: $(EXECUTABLES)
 
-build/%.o: %.c | build
-    $(CC) $(CFLAGS) -c $< -o $@
+build/%.o: $(SRCDIR)/%.c
+	$(shell mkdir -p build)
+	$(CC) $(CFLAGS) -c $< -o $@
 
-build/%: build/%.o | build
-    $(CC) $(CFLAGS) $< -o $@
-
-build:
-    mkdir -p build
+build/%: build/%.o
+	$(shell mkdir -p build)
+	$(CC) $(CFLAGS) $< -o $@
 
 clean:
-    rm -rf build
+	rm -rf build
