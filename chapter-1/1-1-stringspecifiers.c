@@ -9,5 +9,6 @@ int main() {
   printf("HelloWorld\t");        // tab
   printf("HelloWorld\v");        // same as f
   printf("HelloWorld\x35");      // hex
+  printf("HelloWorld%o", 0357);  // octal
   printf("\n\n");
 }

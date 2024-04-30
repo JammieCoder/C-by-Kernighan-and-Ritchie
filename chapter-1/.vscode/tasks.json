@@ -21,7 +21,7 @@
             "type": "shell",
             "command": "gcc ${file} -o build/${fileBasenameNoExtension} && ./build/${fileBasenameNoExtension}",
             "group": {
-                "kind": "build",
+                "kind": "test",
                 "isDefault": true
             },
             "presentation": {
