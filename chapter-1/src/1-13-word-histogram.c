@@ -1,10 +1,11 @@
 #include <stdio.h>
 
-#define IN 1  // inside a word
-#define OUT 0 // outside a word
+#define IN 1         // inside a word
+#define OUT 0        // outside a word
+#define HISTWIDTH 20 // create a macro for any integer used > once
 
 void init(int *nwordLen) {
-  for (int i = 0; i < 10; i++) {
+  for (int i = 0; i < HISTWIDTH; i++) {
     nwordLen[i] = 0;
   }
 }
@@ -28,7 +29,7 @@ void reader(int *nwordLen) {
 
 void print(int *nwordLen) {
   printf("Word Lengths Histogram: \n");
-  for (int i = 0; i < 20; i++) {
+  for (int i = 0; i < HISTWIDTH; i++) {
     printf("%d |", i);
     for (int j = 0; j < nwordLen[i]; j++) {
       putchar('-');
@@ -38,7 +39,7 @@ void print(int *nwordLen) {
 }
 
 int main() {
-  int nwordLen[20];
+  int nwordLen[HISTWIDTH];
 
   // arrays are already pointers to their first element
   // (can send it as is)
