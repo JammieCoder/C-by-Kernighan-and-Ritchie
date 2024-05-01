@@ -11,4 +11,5 @@ int main() {
   printf("HelloWorld\x35");      // hex
   printf("HelloWorld%o", 0357);  // octal
   printf("\n\n");
+  return 0;
 }

@@ -45,4 +45,5 @@ int main() {
     printf("%3.0f|%6.2f\n", fheit, cgrade);
     fheit += step;
   }
+  return 0;
 }

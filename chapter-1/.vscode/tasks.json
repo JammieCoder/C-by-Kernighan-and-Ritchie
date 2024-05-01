@@ -19,7 +19,7 @@
         {
             "label": "compile and run C",
             "type": "shell",
-            "command": "gcc ${file} -o build/${fileBasenameNoExtension} && ./build/${fileBasenameNoExtension}.o",
+            "command": "gcc ${file} -o build/${fileBasenameNoExtension}.o && ./build/${fileBasenameNoExtension}.o",
             "group": {
                 "kind": "test",
                 "isDefault": true

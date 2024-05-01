@@ -1,5 +1,8 @@
 #include <stdio.h>
 #include <sys/types.h>
+
+float converttofheit(float *cgrade) { return (*cgrade / (5.0 / 9.0)) + 32.0; }
+
 int main() {
   float fheit;
   float cgrade = 0; // in reverse because little-endian
@@ -13,13 +16,10 @@ int main() {
   printf("\nC  | F");
   printf("\n_______\n");
   while (cgrade <= upper) {
-    // integer division truncates the decimal, float division doesn't
-    // automatic tmp conversion -> float if other operand is float
-    fheit = (cgrade / (5.0 / 9.0)) + 32.0;
-    // no before decimal = min char's wide
-    // no. after decimal = min char's after decimal
+    fheit = converttofheit(&cgrade);
     printf("%3.0f|%3.0f\n", cgrade, fheit);
     cgrade += step;
   }
+
   return 0;
 }

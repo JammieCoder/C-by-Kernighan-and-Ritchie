@@ -12,4 +12,5 @@ int main() {
       putchar(c2);
     }
   }
+  return 0;
 }

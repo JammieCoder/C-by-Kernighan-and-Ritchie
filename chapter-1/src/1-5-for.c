@@ -14,4 +14,5 @@ int main() {
   for (fheit = UPPER; fheit >= LOWER; fheit -= STEP) {
     printf("%3d %6.1f\n", fheit, (5.0 / 9.0) * (fheit - 32));
   }
+  return 0;
 }

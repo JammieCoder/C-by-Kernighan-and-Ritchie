@@ -23,4 +23,5 @@ int main() {
     putchar(c);
   }
   printf("\n");
+  return 0;
 }

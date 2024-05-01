@@ -15,4 +15,5 @@ int main() {
   printf("%d New Lines\n", nNewLine);
   printf("%d Blanks\n", nBlanks);
   printf("%d Tabs\n", nTabs);
+  return 0;
 }

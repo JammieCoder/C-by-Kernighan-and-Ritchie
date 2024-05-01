@@ -30,4 +30,5 @@ int main() {
   printf("\n");
 
   clearbuffer();
+  return 0;
 }

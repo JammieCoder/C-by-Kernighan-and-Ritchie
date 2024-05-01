@@ -2,7 +2,7 @@
 
 #define IN 1         // inside a word
 #define OUT 0        // outside a word
-#define HISTWIDTH 20 // create a macro for any integer used > once
+#define HISTWIDTH 20 // create a macro for any value used > once
 
 void init(int *nwordLen) {
   for (int i = 0; i < HISTWIDTH; i++) {
@@ -46,4 +46,6 @@ int main() {
   init(nwordLen);
   reader(nwordLen);
   print(nwordLen);
+
+  return 0;
 }

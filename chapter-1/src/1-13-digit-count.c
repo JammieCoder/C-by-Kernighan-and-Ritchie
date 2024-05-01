@@ -35,4 +35,6 @@ int main() {
   init(&nwhite, &nother, ndigit);
   reader(&nwhite, &nother, ndigit);
   print(&nwhite, &nother, ndigit);
+
+  return 0;
 }
