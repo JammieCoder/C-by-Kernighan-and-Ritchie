@@ -37,10 +37,3 @@ int getlinec(char line[], int maxline) {
   }
   return i;
 }
-
-void saveline(char to[], char from[]) {
-  int i = 0;
-  while ((to[i] = from[i]) != '\0') {
-    ++i;
-  }
-}
