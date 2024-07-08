@@ -8,11 +8,11 @@ all: $(EXECUTABLES)
 
 build/%.o: $(SRCDIR)/%.c
 	$(shell mkdir -p build)
-	$(CC) $(CFLAGS) -c $< -o $@
+	clang $(CFLAGS) -c $< -o $@
 
 build/%: build/%.o
 	$(shell mkdir -p build)
-	$(CC) $(CFLAGS) $< -o $@
+	clang $(CFLAGS) $< -o $@
 
 clean:
 	rm -rf build
