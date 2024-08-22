@@ -1,6 +1,7 @@
 # Ignore build artifacts
 build/
 .cache/
+src/
 
 # Ignore compiled binaries
 *.o
