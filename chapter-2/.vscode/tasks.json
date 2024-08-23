@@ -1,0 +1,33 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+                {
+            "label": "build c for debug",
+            "type": "shell",
+            "command": "mkdir -p build/Debug;gcc -g ${file} -o build/Debug/${fileBasenameNoExtension}.o",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        },
+        {
+            "label": "compile and run C",
+            "type": "shell",
+            "command": "mkdir -p build; gcc ${file} -o build/${fileBasenameNoExtension}.o && ./build/${fileBasenameNoExtension}.o",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "shared"
+            }
+        }
+    ]
+}

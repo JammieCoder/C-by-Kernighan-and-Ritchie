@@ -1,0 +1,38 @@
+[
+  {
+    "arguments": [
+      "/usr/bin/clang",
+      "-c",
+      "-o",
+      "build/2-1-ranges.o",
+      "src/2-1-ranges.c"
+    ],
+    "directory": "/home/bham/Desktop/C-by-Kernighan-and-Ritchie/chapter-2",
+    "file": "/home/bham/Desktop/C-by-Kernighan-and-Ritchie/chapter-2/src/2-1-ranges.c",
+    "output": "/home/bham/Desktop/C-by-Kernighan-and-Ritchie/chapter-2/build/2-1-ranges.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang",
+      "-c",
+      "-o",
+      "build/2-2-equivalent-loop.o",
+      "src/2-2-equivalent-loop.c"
+    ],
+    "directory": "/home/bham/Desktop/C-by-Kernighan-and-Ritchie/chapter-2",
+    "file": "/home/bham/Desktop/C-by-Kernighan-and-Ritchie/chapter-2/src/2-2-equivalent-loop.c",
+    "output": "/home/bham/Desktop/C-by-Kernighan-and-Ritchie/chapter-2/build/2-2-equivalent-loop.o"
+  },
+  {
+    "arguments": [
+      "/usr/bin/clang",
+      "-c",
+      "-o",
+      "build/2-3-htoi.o",
+      "src/2-3-htoi.c"
+    ],
+    "directory": "/home/bham/Desktop/C-by-Kernighan-and-Ritchie/chapter-2",
+    "file": "/home/bham/Desktop/C-by-Kernighan-and-Ritchie/chapter-2/src/2-3-htoi.c",
+    "output": "/home/bham/Desktop/C-by-Kernighan-and-Ritchie/chapter-2/build/2-3-htoi.o"
+  }
+]
